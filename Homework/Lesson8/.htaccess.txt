@@ -1,0 +1,4 @@
+ <IfModule mod_rewrite.c>\
+Redirect 301 / conTact / contacts
+Redirect  / Article.html /blog
+</IfModule>}
