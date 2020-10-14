@@ -4,21 +4,19 @@
     margin: 0;
     text-align: center;
 }
-.green_color{
-    font-size: 16px;
-    color: green;
+.boxing {
+    font-size: 14px;
 }
-
 .boxing h2{
     color: grey;
-}
-.boxing{
-    font-size: 14px;
 }
 .red_color h2 {
     color: red;
 }
-
+.green_color {
+    font-size: 16px;
+    color: green;
+}
 
 
 
