@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework16.2</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .box{
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 0 auto;
+        font-size: 27px;
+    }
+    .shad1{
+        margin-top: 50px;
+        box-shadow: 35px 40px gray;
+    }
+    .shad2{
+        margin-top: 100px;
+        box-shadow: 35px 40px 10px gray;
+    }
+    .shad3{
+        margin-top: 100px;
+        box-shadow: inset -10px -10px 15px red, inset 10px 10px 15px blue;
+        margin-bottom: 50px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="box shad1">Блок с тенью</div>
+    <div class="box shad2">Блок с тенью + размытие</div>
+    <div class="box shad3">Две внутренние тени</div>
+</div>
+</body>
+</html>
