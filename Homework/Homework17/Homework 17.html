@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework17</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menubar{
+        width:100%;
+        height:130px;
+        text-align:center;
+        background:darkblue;
+    }
+    .item{
+        width:13%;
+        margin:10px;
+        height:50px;
+        line-height:3em;
+        display:inline-block;
+        background:white;
+
+    }
+    .subitem{
+        display:block;
+        position:absolute;
+        margin-top:73px;
+        background:white;
+        visibility:hidden;
+        width:300px;
+    }
+    .subitem .link{
+        border-top:1px solid #000;
+        height:0;
+        opacity:0;
+    }
+    .spacer{
+        position:relative;
+        top:-10px;
+        width:0;
+        height:72px;
+        background: black;
+        transition: 0.5s linear;
+    }
+    .item:hover~.spacer{
+        width:100%;
+        transition:0.5 linear;
+    }
+    .item:hover .subitem{
+        visibility:visible;
+        transition:1s ease-in;
+    }
+    .item:hover  .subitem .link{
+        height:50px;
+        opacity:1;
+        transition:0.5s linear;
+    }
+    .btn{
+        width:150px;
+        background:black;
+        text-align:center;
+        color:white;
+        margin-top: 30px;
+        padding:10px 0px;
+        border:solid 1px #3F3F3F;
+        display:block;
+        text-decoration:none;
+        transition:0.4s linear;
+    }
+    .btn:hover{
+        background: darkblue;
+        border-radius: 8px 8px 8px 8px;
+    }
+    .zoom_img img{
+        transition:all 1s ease-out;
+    }
+    .zoom_img img:hover{
+        transform:scale(1.1);
+    }
+</style>
+<body>
+
+<div class="menubar">
+
+    <div class="item">
+        Home
+    </div>
+
+    <div class="item">
+        About
+        <div class="subitem">
+            <div class="link">Submenu</div>
+            <div class="link">Submenu</div>
+            <div class="link">Submenu</div>
+            <div class="link">Submenu</div>
+        </div>
+    </div>
+
+
+    <div class="item">
+        Projects
+    </div>
+
+    <div class="item">
+        Reviews
+    </div>
+
+
+    <div class="item">
+        Blog
+    </div>
+
+
+    <div class="item">
+        Contact us
+    </div>
+
+    <div class="spacer"></div>
+</div>
+
+<a class="btn" href="#">Button</a>
+
+</div>
+</body>
+</html>
+

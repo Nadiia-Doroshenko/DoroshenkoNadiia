@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework17.3</title>
+</head>
+<style>
+    .square{
+        width:70px;
+        height:70px;
+        position:relative;
+        background-color:lightskyblue;
+        animation: square 5s;
+        animation-iteration-count:10;
+    }
+    @keyframes square{
+        from{
+            top:0;
+            left:0;
+        }
+        25%{
+            top:0;
+            left:400px;
+            background-color: darkslategrey;
+        }
+        50%{
+            top:400px;
+            left:400px;
+            background-color:darkblue;
+        }
+        75%{
+            top:400px;
+            left:0;
+            background-color:brown;
+        }
+        to{
+            top:0;
+        }
+    }
+</style>
+<body>
+<div class="square"></div>
+</body>
+</body>
+</html>
