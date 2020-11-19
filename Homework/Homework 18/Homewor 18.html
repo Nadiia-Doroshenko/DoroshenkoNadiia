@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 18</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        scroll-behavior:smooth;
+    }
+    html, body{
+        height: 100%;
+    }
+    body{
+        background: white;
+    }
+    .box{
+        width: 100%;
+        margin-top: 5%;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .box div:first-child{
+        order: 2;
+    }
+    .box div:last-child{
+        order: 1;
+    }
+    .text{
+       width: 50%;
+        text-align: center;
+    }
+    .text h1{
+        font-size:100px;
+        color: #003f54;
+        padding-top: 20px;
+        margin: 0;
+    }
+    .text span{
+        font-size: 30px;
+        color: #003f54;
+    }
+    .text p{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        color: #003f54;
+    }
+    .text .btn-home {
+        color: white;
+        background-color: #003f54;
+        padding: 10px 20px;
+        margin-top: 10%;
+        border-radius: 3px;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    .text .btn-home:hover {
+        background-color: #333333;
+    }
+    .image{
+        width:50%;
+    }
+</style>
+<body>
+<div class="box">
+<div class="text">
+    <h1>404</h1>
+    <span>Ooopps</span>
+    <p>The page you are looking for does not exist. Visit Homepage</p>
+    <button class="btn-home">Homepage</>
+</div>
+<div class="image">
+    <img src="img/caveman.gif" alt="error">
+</div>
+    </div>
+</body>
+</html>
