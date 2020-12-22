@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<button id="btn" onClick="myFunction('paragraph')">Open</button>
+<div id ="paragraph">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
+</body>
+<script>
+    document.getElementById("paragraph").style.display="none";
+    function myFunction(id) {
+        display = document.getElementById(id).style.display;
+        if (display == 'none') {
+            document.getElementById(id).style.display = "block";
+            document.getElementById('btn').innerHTML = "Close";
+        } else {
+            document.getElementById(id).style.display = "none";
+            document.getElementById('btn').innerHTML = "Open";
+        }
+    }
+</script>
+</html>
