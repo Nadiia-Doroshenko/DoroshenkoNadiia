@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework28</title>
+</head>
+<style>
+    input{
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    label{
+        display: none;
+    }
+</style>
+<body>
+<div>
+    <input value="Nadia" id="name">
+    <label id="label1" for="name">Nadia</label>
+</div>
+<div>
+    <input value="Doroshenko" id="surname">
+    <label id="label2" for="surname">Doroshenko</label>
+</div>
+<div>
+    <input value="Kyiv" id="city">
+    <label id="label3" for="city">Kyiv</label>
+</div>
+<div>
+    <button id="click-btn">Click Send</button>
+</div>
+<script>
+    function mylabel() {
+        document.getElementById('label1').style.display = 'inline-block';
+        document.getElementById('label2').style.display = 'inline-block';
+        document.getElementById('label3').style.display = 'inline-block';
+    }
+
+    let sendBtn = document.getElementById('click-btn');
+    sendBtn.addEventListener('click', mylabel);
+    sendBtn.addEventListener('click', mylabel);
+</script>
+</body>
+</html>

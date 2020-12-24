@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /vendor/
-Allow: /vendor/*.js
-Allow: /vendor/*.css
-Disallow: /includes/
-Allow: /includes/*.js
-Allow: /includes/*.css
